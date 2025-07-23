@@ -54,8 +54,8 @@ export function HeaderMenu() {
         position: 'sticky',
         top: 0,
         zIndex: 10,
-        backgroundColor: 'white',
-        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+        background: 'linear-gradient(90deg, #f8e9ff 0%, #ffffff 100%)',
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
         borderBottom: '1px solid #e0e0e0',
         padding: '10px 0',
       }}
@@ -78,7 +78,8 @@ export function HeaderMenu() {
               {navigation.map((nav, index) => {
                 return (
                   <Button
-                    variant='subtle'
+                    variant="light"
+                    color="mapol-violet"
                     component={Link}
                     to={nav.path}
                     key={index}
@@ -110,6 +111,8 @@ export function HeaderMenu() {
         <Stack>
           {navigation.map((nav, index) => (
             <Button
+              variant="light"
+              color="mapol-violet"
               component={Link}
               to={nav.path}
               key={index}
